@@ -26,5 +26,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Auth::routes();
-
+Route::post('/token', 'WechatController@token');
 Route::get('/home', 'HomeController@index');
