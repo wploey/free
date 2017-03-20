@@ -26,5 +26,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Auth::routes();
-Route::any('/wechat', 'WechatController@serve');
+
 Route::get('/home', 'HomeController@index');
+
+Route::any('/wechat', 'WechatController@serve');
+Route::get('/users', 'UsersController@users');
+Route::get('/users/{openId}', 'UsersController@user');
