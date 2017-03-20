@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4adf82fec26a390a74a2cf56ae6c355a",
+    "content-hash": "4998ef8a6f6cb87d53d899a902e5e3e8",
     "packages": [
         {
             "name": "caouecs/laravel-lang",
@@ -1062,6 +1062,48 @@
                 "overtrue"
             ],
             "time": "2017-02-14T10:03:14+00:00"
+        },
+        {
+            "name": "overtrue/laravel-wechat",
+            "version": "3.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/laravel-wechat.git",
+                "reference": "b9030e66b9682d4fa027b8c7cecd0c2c8a1ca244"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/overtrue/laravel-wechat/b9030e66b9682d4fa027b8c7cecd0c2c8a1ca244.zip",
+                "reference": "b9030e66b9682d4fa027b8c7cecd0c2c8a1ca244",
+                "shasum": ""
+            },
+            "require": {
+                "overtrue/wechat": "~3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\LaravelWechat\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com"
+                }
+            ],
+            "description": "微信 SDK for Laravel",
+            "keywords": [
+                "laravel",
+                "sdk",
+                "wechat",
+                "weixin"
+            ],
+            "time": "2017-02-20T07:23:03+00:00"
         },
         {
             "name": "overtrue/socialite",
