@@ -16,3 +16,15 @@ Route::get('/', function () {
 });
 
 Route::post('/deploy', 'DeploymentController@deploy');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Route::get('/test', 'HomeController@test');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
