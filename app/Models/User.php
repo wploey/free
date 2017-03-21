@@ -26,4 +26,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    //获取密码
+//    public function getAuthPassword()
+//    {
+//        return $this->user_password;
+//    }
 }

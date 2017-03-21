@@ -28,9 +28,13 @@ Route::post('/deploy', 'DeploymentController@deploy');
 //
 //Route::get('/home', 'HomeController@index');
 
-
-Route::group(['domain' => 'free.com'],function(){
+Route::domain('free.com')->group(function (){
     include __DIR__ .'/route/lide-web.php';
     include __DIR__ .'/route/lide-api.php';
     include __DIR__ .'/route/lide-wx.php';
 });
+//Route::group(['domain' => 'free.com'],function(){
+//    include __DIR__ .'/route/lide-web.php';
+//    include __DIR__ .'/route/lide-api.php';
+//    include __DIR__ .'/route/lide-wx.php';
+//});

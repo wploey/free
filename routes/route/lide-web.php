@@ -7,3 +7,4 @@
  */
 
 Route::get('/', 'Lide\AdminController@index');
+
