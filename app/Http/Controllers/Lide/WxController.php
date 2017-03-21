@@ -1,10 +1,16 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Lide;
 
 use Illuminate\Http\Request;
-class WechatController extends Controller
+use App\Http\Controllers\Controller;
+
+class WxController extends Controller
 {
+    public function index()
+    {
+        echo 'wx';
+    }
     /**
      * 处理微信的请求消息
      *

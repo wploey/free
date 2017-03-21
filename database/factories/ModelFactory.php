@@ -18,7 +18,18 @@ $factory->define(App\Models\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
-        'password' => $password ?: $password = bcrypt('secret'),
+        'password' => $password ?: $password = bcrypt('123456'),
         'remember_token' => str_random(10),
+    ];
+});
+
+$factory->define(App\Models\Lide\News::class, function (Faker\Generator $faker) {
+    static $password;
+
+    return [
+        'user_id' => $faker->randomDigit,
+        'title' => $faker->sentence,
+        'body' => $faker->paragraph,
+        'view' => $faker->boolean(),
     ];
 });

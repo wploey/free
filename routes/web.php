@@ -11,24 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 Route::post('/deploy', 'DeploymentController@deploy');
-Auth::routes();
+//Auth::routes();
+//
+//Route::get('/home', 'HomeController@index');
+//
+//Auth::routes();
+//
+//Route::get('/home', 'HomeController@index');
+//
+//Auth::routes();
+//
+//Route::get('/home', 'HomeController@index');
 
-Route::get('/home', 'HomeController@index');
 
-Route::get('/test', 'HomeController@test');
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
-
-Route::any('/wechat', 'WechatController@serve');
-Route::get('/users', 'UsersController@users');
-Route::get('/users/{openId}', 'UsersController@user');
+Route::group(['domain' => 'free.com'],function(){
+    include __DIR__ .'/route/lide-web.php';
+    include __DIR__ .'/route/lide-api.php';
+    include __DIR__ .'/route/lide-wx.php';
+});
