@@ -28,7 +28,7 @@ Route::post('/deploy', 'DeploymentController@deploy');
 //
 //Route::get('/home', 'HomeController@index');
 
-Route::domain('free.com')->group(function (){
+Route::domain('laravel-admin-wploey.c9users.io')->group(function (){
     include __DIR__ .'/route/lide-web.php';
     include __DIR__ .'/route/lide-api.php';
     include __DIR__ .'/route/lide-wx.php';
